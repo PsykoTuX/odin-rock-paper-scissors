@@ -27,7 +27,7 @@ if ((computerSelection=='Rock' && playerSelection == 'Scissors') || (computerSel
 } else if (computerSelection == playerSelection) {
     console.log('It\'s a draw, you both chose ' + playerSelection);
     playRound();
-} else if (playerSelection != ('Rock' || 'Scissors' || 'Paper' ) ) {
+} else if ((playerSelection != 'Rock' ) && (playerSelection != 'Scissors') && (playerSelection !='Paper' ) ) {
     console.log('You did not choose a proper value, please try again choosing Rock, Paper or Scissors');
     playRound();
 }
